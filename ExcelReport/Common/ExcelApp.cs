@@ -58,8 +58,7 @@ namespace ExcelReport.Common
         {
             Worksheet s = (Worksheet)wb.Worksheets.Add(Type.Missing, Type.Missing, Type.Missing, Type.Missing);
             s.Name = SheetName;
-            s.PageSetup.HeaderMargin = app.InchesToPoints(0.196850393700787);
-
+            s.PageSetup.HeaderMargin = app.InchesToPoints(0.196850393700787);\
             return s;
         }
 
